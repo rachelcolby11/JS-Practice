@@ -1,0 +1,63 @@
+<script>
+
+//array to hold letters of word
+var letters = ['Y', 'O']
+
+
+//array to hold current guessed letters
+
+var correctGuesses = []
+
+
+//function that takes an argument (guessed letter)
+//iterate through letters to check against letters in word
+//push any matches of letters into the correctGuesses array
+//print any matches of letters to the screen
+//check for letters remained to be guess, if yes, continue game
+//if no, say congrats for winning
+
+function guessLetter(guessedLetter) {
+   for(var i = 0; i < letters.length; i++) {
+     //if letter is in array then add to correctGuesses array
+     //and print letter to screen, check to see if letter remain
+     //(if arrays are equal) and say congrats if winner
+     if (letters[i] === guessedLetter) {
+         console.log(guessedLetter);
+         correctGuesses.push(guessedLetter);
+         console.log(correctGuesses);
+         console.log(i);
+         console.log("<br>");
+         // break;
+         //console.log(guessedLetter);
+     }
+
+     //else say sorry! try again!
+     else {
+        document.write("Sorry! Try again!!");
+        document.write("<br>");
+        // break;
+      };
+
+   };
+
+   //if letters remain in letters array, continue game
+    // if (letters === correctGuesses) {
+    //   document.write("Congrats!! You won!!"); document.write("<br>");
+    // };
+
+   //else say congrats
+     // else {
+
+     //  };
+
+};
+
+guessLetter('Y');
+guessLetter('J');
+guessLetter('A');
+guessLetter('O');
+
+</script>
+
+
+
