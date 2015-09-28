@@ -3,5 +3,23 @@ h1 {
 }
 
 body {
-  background-color: blue;
+  background-color: black;
+}
+
+
+.style_one {
+  color: green;
+}
+
+.style_two {
+  color: red;
+}
+
+.style_one .style_two {
+  color: yellow;
+}
+
+
+.style_one.style_two {
+  color: blue;
 }
