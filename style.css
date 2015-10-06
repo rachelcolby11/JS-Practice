@@ -1,25 +1,25 @@
 h1 {
-  color: red;
+  color: blue;
 }
 
 body {
-  background-color: black;
+  background-color: white;
 }
 
 
 .style_one {
-  color: green;
+  color: blue;
 }
 
 .style_two {
-  color: red;
+  color: green;
 }
 
 .style_one .style_two {
-  color: yellow;
+  color: #23B8B8;
 }
 
 
 .style_one.style_two {
-  color: blue;
+  color: #DC2A8F;
 }
