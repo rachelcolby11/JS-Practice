@@ -1,6 +1,12 @@
-// var x = 1000;
-// var y = 234;
-// var sum = x + y;
-// var message = "The sum of x and y is " + sum + "."
+var createName = function (first, last) {
+  return first + " " + last;
+}
 
-alert("The sum of x and y is " + (1000 + 234) + ".");
+var askName = function () {
+  var first = prompt("What is your first name?");
+  var last = prompt("What is your last name?");
+  var fullName = createName(first, last);
+  alert("Your name is " + fullName + "!");
+};
+
+askName();
