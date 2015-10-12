@@ -1,10 +1,10 @@
-//Define SmileyFace constructor function
+//SmileyFace constructor function
 var SmileyFace = function(x, y) {
     this.centerX = x;
     this.centerY = y;
 };
 
-//Define draw prototype
+//Define draw method on SmileyFace object
 SmileyFace.prototype.draw = function() {
     fill(255, 234, 0);
     ellipse(this.centerX, this.centerY, 150, 150);
@@ -16,7 +16,7 @@ SmileyFace.prototype.draw = function() {
     arc(this.centerX, this.centerY+10, 64, 40, 0, 180);
 };
 
-//Define speak prototype
+//Define speak method on SmileyFace object
 SmileyFace.prototype.speak = function(message) {
     text(message, this.centerX+85, this.centerY);
 };
