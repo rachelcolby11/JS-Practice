@@ -13,3 +13,6 @@ var askName = function () {
 }
 
 askName();
+
+asker = document.getElementById("asker");
+asker.onclick = askName();
