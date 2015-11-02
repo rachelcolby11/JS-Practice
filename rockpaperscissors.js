@@ -11,24 +11,24 @@ console.log("Computer: " + computerChoice);
 
 var compare = function (choice1, choice2) {
     if (choice1 === choice2) {
-        return "The result is a tie!";
+        alert("The result is a tie!");
     } else if (choice1 === "rock") {
         if (choice2 === "scissors") {
-            return "Rock wins";
+            alert("Rock wins!");
         } else {
-            return "Paper wins";
+            alert("Paper wins!");
         };
     } else if (choice1 === "paper") {
         if (choice2 === "rock") {
-            return "Paper wins";
+            alert("Paper wins!");
         } else {
-            return "Scissors wins";
+            alert("Scissors wins!");
         };
     } else if (choice1 === "scissors") {    
         if (choice2 == "rock") {
-            return "Rock wins";
+            alert("Rock wins!");
         } else {
-            return "Scissors wins";
+            alert("Scissors wins!");
         };
     } else {
         prompt(choice1 + " is not a valid entry. Do you choose rock, paper or scissors?");
