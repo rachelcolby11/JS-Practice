@@ -31,7 +31,8 @@ var compare = function (choice1, choice2) {
             alert("Scissors wins!");
         };
     } else {
-        prompt(choice1 + " is not a valid entry. Do you choose rock, paper or scissors?");
+        userChoice = prompt(choice1 + " is not a valid entry. Do you choose rock, paper or scissors?");
+        compare(userChoice,computerChoice);
     };    
 };
 
