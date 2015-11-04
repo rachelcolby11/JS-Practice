@@ -11,7 +11,12 @@ console.log("Computer: " + computerChoice);
 
 var compare = function (userChoice, computerChoice) {
     if (userChoice === computerChoice) {
-        alert("It's a tie!");
+        if (confirm("It's a tie! Rematch?") === true) {
+            userChoice = prompt("Do you choose rock, paper or scissors?");
+            compare(userChoice,computerChoice);
+        } else {
+            alert("Ok, let's play again soon :)");
+        };
     } else if (userChoice === "rock") {
         if (computerChoice === "scissors") {
             alert("Good choice! Rock smashes scissors. You win!");
